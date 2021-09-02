@@ -20,3 +20,53 @@ main
 		color desaturated-blue
 		max-width 300px
 		margin spacing-medium auto
+
+.pricing
+	display flex
+	align-items center
+	justify-content space-between
+	padding spacing-medium
+	background-color very-pale-blue
+	max-width 350px
+	border-radius 10px
+	margin 0 auto
+	&__description
+		display flex
+		align-items center
+		&__image
+			width 50px
+			height 50px
+		&__text
+			margin-left spacing-medium
+			&__title
+				margin 0
+				font-size 1.6rem
+				font-weight fw-bold
+			&__p
+				margin 0
+				font-size 1.5rem
+				color desaturated-blue
+	&__link
+		color bright-blue
+		font-weight fw-medium
+
+.buttons
+	display flex
+	flex-direction column
+	max-width 350px
+	margin spacing-medium auto
+	&__item-primary
+		background-color bright-blue
+		color white
+		border-radius 10px
+		border none
+		height 50px
+		font-size 1.8rem
+		font-weight fw-medium
+	&__item-secondary
+		background-color white
+		color desaturated-blue
+		border none
+		height 50px
+		font-size 1.8rem
+		font-weight fw-medium
