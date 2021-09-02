@@ -29,13 +29,15 @@ img {
 body {
   background-color: #f5f7ff;
   font-family: 'Red Hat Display', sans-serif;
+  min-height: 100vh;
 }
 main {
-  margin: 50px auto;
+  margin: 20px auto;
   border-radius: 25px;
   overflow: hidden;
   max-width: 440px;
   background-color: #fff;
+  box-shadow: 14px 17px 31px 0px rgba(176,176,176,0.75);
 }
 .description {
   text-align: center;
@@ -55,6 +57,7 @@ main {
   justify-content: space-between;
   padding: 20px;
   background-color: #f5f7ff;
+  width: 95%;
   max-width: 350px;
   border-radius: 10px;
   margin: 0 auto;
@@ -84,9 +87,13 @@ main {
   color: #3829e0;
   font-weight: 700;
 }
+.pricing__link:hover {
+  color: #766cea;
+}
 .buttons {
   display: flex;
   flex-direction: column;
+  width: 95%;
   max-width: 350px;
   margin: 20px auto;
 }
@@ -94,16 +101,25 @@ main {
   background-color: #3829e0;
   color: #fff;
   border-radius: 10px;
+  box-shadow: 14px 17px 31px 0px rgba(176,176,176,0.75);
   border: none;
   height: 50px;
   font-size: 1.8rem;
   font-weight: 700;
+  cursor: pointer;
+}
+.buttons__item-primary:hover {
+  background-color: #766cea;
 }
 .buttons__item-secondary {
-  background-color: #fff;
+  background: none;
   color: #7280a7;
   border: none;
   height: 50px;
   font-size: 1.8rem;
   font-weight: 700;
+  cursor: pointer;
+}
+.buttons__item-secondary:hover {
+  color: #4f5b7d;
 }
