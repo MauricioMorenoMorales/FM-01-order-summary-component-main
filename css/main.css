@@ -28,6 +28,9 @@ img {
 }
 body {
   background-color: #f5f7ff;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
   font-family: 'Red Hat Display', sans-serif;
   min-height: 100vh;
 }
@@ -122,4 +125,10 @@ main {
 }
 .buttons__item-secondary:hover {
   color: #4f5b7d;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: 100% 45%;
+  }
 }
